@@ -54,7 +54,7 @@ function Footer() {
                 </div>
             </div>
             <div className="footer__account">
-                <p> <Link to='/'>Antre</Link>| <Link to='/'>Kreye yon kont</Link></p>
+                <p> <Link to='/'>Antre</Link> | <Link to='/'>Kreye yon kont</Link></p>
             </div>
         </div>
     )
