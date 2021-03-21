@@ -267,6 +267,11 @@ a {
     border-radius: 6px;
 }
 
+.collection-img>div img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 /* Category Popular */
 
