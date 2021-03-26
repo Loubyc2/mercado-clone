@@ -53,9 +53,15 @@ function Footer() {
                     </ul>
                 </div>
             </div>
-            <div className="footer__account">
-                <p> <Link to='/'>Antre</Link> | <Link to='/'>Kreye yon kont</Link></p>
+            <div className="footer__bottom pt-3 px-4">
+                <div className="footer__account  mb-4">
+                    <p> <Link to='/'>Antre</Link> | <Link to='/'>Kreye yon kont</Link></p>
+                </div>
+                <p>Tèm ak kondisyon aplikab &#8287; Ki jan nou pwoteje privasite</p>
+
+                <span>&copy; 2021 LbDesign</span>
             </div>
+
         </div>
     )
 }

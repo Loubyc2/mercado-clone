@@ -9,41 +9,7 @@ import * as RiIcons from 'react-icons/ri';
 import "./Home.css";
 
 // Images
-
-import carousel_1 from '../../img/carousel/carousel-img-1.webp';
-import carousel_2 from '../../img/carousel/carousel-img-2.webp';
-import carousel_3 from '../../img/carousel/carousel-img-3.webp';
-import carousel_4 from '../../img/carousel/carousel-img-4.webp';
-import carousel_5 from '../../img/carousel/carousel-img-5.webp';
-// Carousel 02
-import payment_img from '../../img/carousel/payment.svg';
-import shipping_img from '../../img/carousel/shipping.svg';
-import protected_img from '../../img/carousel/protected.svg';
-import payMethod from '../../img/payMethod/credit-card.svg';
-import backToSchool from '../../img/banner/backToSchool.webp';
-import allDoYouNeed from '../../img/banner/allDoYouNeed.webp';
-import smartTv from '../../img/banner/home-desktop-discovery-picture-6430f189.webp';
-import toolDrill from '../../img/banner/home-desktop-discovery-picture-725ebdfb-76d1-4581-a7c4-8d5de914cd4f.webp';
-import collection_1 from '../../img/collection/collection-img-1.webp';
-import collection_2 from '../../img/collection/collection-img-2.webp';
-import collection_3 from '../../img/collection/collection-img-3.webp';
-import collection_4 from '../../img/collection/collection-img-4.webp';
-import collection_5 from '../../img/collection/collection-img-5.webp';
-import collection_6 from '../../img/collection/collection-img-6.webp';
-
-// Img Official Mark
-import background01_officialMark from '../../img/officialShop/background_officialMark01.jpg';
-import background02_officialMark from '../../img/officialShop/background_officialMark02.jpg';
-import background03_officialMark from '../../img/officialShop/background_officialMark03.jpg';
-import background04_officialMark from '../../img/officialShop/background_officialMark04.jpg';
-import background05_officialMark from '../../img/officialShop/background_officialMark05.jpg';
-import background06_officialMark from '../../img/officialShop/background_officialMark06.jpg';
-import mark01 from '../../img/officialShop/D_Q_NP_944728-MLA25913302794_082017-AE.webp';
-import mark02 from '../../img/officialShop/D_Q_NP_883452-MLA27599783560_062018-AE.webp';
-import mark03 from '../../img/officialShop/614572-MLA43528952303_092020-AE.webp';
-import mark04 from '../../img/officialShop/D_Q_NP_947728-MLA25970851050_092017-AE.webp';
-import mark05 from '../../img/officialShop/D_Q_NP_984534-MLA25898740864_082017-AE.webp';
-import mark06 from '../../img/officialShop/D_Q_NP_832068-MLA40314488442_012020-AE.webp';
+import { imgsData } from './data';
 
 import data from './data'
 
@@ -68,19 +34,19 @@ function Home() {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src={carousel_1} className='d-block w-100' alt="carousel-img" />
+                        <img src={imgsData.carousel_1} className='d-block w-100' alt="carousel-img" />
                     </div>
                     <div className="carousel-item ">
-                        <img src={carousel_2} className='d-block w-100' alt="carousel-img" />
+                        <img src={imgsData.carousel_2} className='d-block w-100' alt="carousel-img" />
                     </div>
                     <div className="carousel-item ">
-                        <img src={carousel_3} className='d-block w-100' alt="carousel-img" />
+                        <img src={imgsData.carousel_3} className='d-block w-100' alt="carousel-img" />
                     </div>
                     <div className="carousel-item">
-                        <img src={carousel_4} className='d-block w-100' alt="carousel-img" />
+                        <img src={imgsData.carousel_4} className='d-block w-100' alt="carousel-img" />
                     </div>
                     <div className="carousel-item ">
-                        <img src={carousel_5} className='d-block w-100' alt="carousel-img" />
+                        <img src={imgsData.carousel_5} className='d-block w-100' alt="carousel-img" />
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#home-carousel" data-bs-slide="prev">
@@ -94,7 +60,7 @@ function Home() {
             </div>
             <div className="paymentMethod">
                 <div className="paymentMethod-content">
-                    <img src={payMethod} alt="payment-img" />
+                    <img src={imgsData.payMethod} alt="payment-img" />
                     <Link to="/">
                         <p>Jiska 12 vèsman san enterè <br /> <span>Gade plis</span></p>
                     </Link>
@@ -146,7 +112,7 @@ function Home() {
                             </div>
                             <Link><span>Gade plis</span></Link>
                         </div>
-                        <img src={backToSchool} alt="" />
+                        <img src={imgsData.backToSchool} alt="" />
                     </Link>
                 </div>
 
@@ -159,7 +125,7 @@ function Home() {
                             </div>
                             <Link><span>Gade plis</span></Link>
                         </div>
-                        <img src={allDoYouNeed} alt="" />
+                        <img src={imgsData.allDoYouNeed} alt="" />
                     </Link>
                 </div>
                 <div className="home__officialShop">
@@ -170,44 +136,44 @@ function Home() {
                         </div>
                         <div className="home__officialShop-content">
                             <div className="home__officialShop-img">
-                                <img src={background01_officialMark} alt="" />
+                                <img src={imgsData.background01_officialMark} alt="" />
                                 <div className="home__officialShop-mark">
-                                    <img src={mark01} alt="" />
+                                    <img src={imgsData.mark01} alt="" />
                                     <p>Nikson</p>
                                 </div>
                             </div>
                             <div className="home__officialShop-img">
-                                <img src={background02_officialMark} alt="" />
+                                <img src={imgsData.background02_officialMark} alt="" />
                                 <div className="home__officialShop-mark">
-                                    <img src={mark02} alt="" />
+                                    <img src={imgsData.mark02} alt="" />
                                     <p>Huawei</p>
                                 </div>
                             </div>
                             <div className="home__officialShop-img">
-                                <img src={background03_officialMark} alt="" />
+                                <img src={imgsData.background03_officialMark} alt="" />
                                 <div className="home__officialShop-mark">
-                                    <img src={mark03} alt="" />
+                                    <img src={imgsData.mark03} alt="" />
                                     <p>HP</p>
                                 </div>
                             </div>
                             <div className="home__officialShop-img">
-                                <img src={background04_officialMark} alt="" />
+                                <img src={imgsData.background04_officialMark} alt="" />
                                 <div className="home__officialShop-mark">
-                                    <img src={mark04} alt="" />
+                                    <img src={imgsData.mark04} alt="" />
                                     <p>Sony</p>
                                 </div>
                             </div>
                             <div className="home__officialShop-img">
-                                <img src={background05_officialMark} alt="" />
+                                <img src={imgsData.background05_officialMark} alt="" />
                                 <div className="home__officialShop-mark">
-                                    <img src={mark05} alt="" />
+                                    <img src={imgsData.mark05} alt="" />
                                     <p>Adidas </p>
                                 </div>
                             </div>
                             <div className="home__officialShop-img">
-                                <img src={background06_officialMark} alt="" />
+                                <img src={imgsData.background06_officialMark} alt="" />
                                 <div className="home__officialShop-mark">
-                                    <img src={mark06} alt="" />
+                                    <img src={imgsData.mark06} alt="" />
                                     <p>Baby Infanti</p>
                                 </div>
                             </div>
@@ -223,7 +189,7 @@ function Home() {
                             </div>
                             <Link><span>Gade plis</span></Link>
                         </div>
-                        <img src={smartTv} alt="" />
+                        <img src={imgsData.smartTv} alt="" />
                     </Link>
                 </div>
                 <div className="home__band mt-3">
@@ -235,7 +201,7 @@ function Home() {
                             </div>
                             <Link><span>Gade plis</span></Link>
                         </div>
-                        <img src={toolDrill} alt="" />
+                        <img src={imgsData.toolDrill} alt="" />
                     </Link>
                 </div>
                 <div className="home__collection">
@@ -247,22 +213,22 @@ function Home() {
                     </div>
                     <div className="collection-img">
                         <div>
-                            <img src={collection_1} alt="" />
+                            <img src={imgsData.collection_1} alt="" />
                         </div>
                         <div>
-                            <img src={collection_2} alt="" />
+                            <img src={imgsData.collection_2} alt="" />
                         </div>
                         <div>
-                            <img src={collection_3} alt="" />
+                            <img src={imgsData.collection_3} alt="" />
                         </div>
                         <div>
-                            <img src={collection_4} alt="" />
+                            <img src={imgsData.collection_4} alt="" />
                         </div>
                         <div>
-                            <img src={collection_5} alt="" />
+                            <img src={imgsData.collection_5} alt="" />
                         </div>
                         <div>
-                            <img src={collection_6} alt="" />
+                            <img src={imgsData.collection_6} alt="" />
                         </div>
                     </div>
                 </div>
@@ -304,19 +270,19 @@ function Home() {
                 <div className="carousel slide" id="carousel-02" data-bs-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img src={payment_img} alt="payment-img" />
+                            <img src={imgsData.payment_img} alt="payment-img" />
                             <h1>Peye avèk kat oubyen kash</h1>
                             <p>Avèk Mercado Pago, peye an vèsman epi pwofite avantaj finansye bank ou ba w, oubyen peye avèk kash. Toujou sekirize!</p>
                             <Link to='/'>Ki jan pou w peye avèk Mercado Pago</Link>
                         </div>
                         <div className="carousel-item">
-                            <img src={shipping_img} alt="payment-img" />
+                            <img src={imgsData.shipping_img} alt="payment-img" />
                             <h1>Livrezon gratis a pati 119.990</h1>
                             <p>Sèlman anrejistre w nan Mercado Libre epi w ap genyen livrezon gratis sou plizyè milyon pwodui.</p>
                             <Link to='/'>Aprann plis konsènan benefis sa</Link>
                         </div>
                         <div className="carousel-item">
-                            <img src={protected_img} alt="payment-img" />
+                            <img src={imgsData.protected_img} alt="payment-img" />
                             <h1>Acha pwoteje</h1>
                             <p>Peye avèk Mercado Pago epi n ap akonpanye w jiskaske w resevwa sa w achte a. E si se pa sa w te espere a, n ap remèt ou lajan w. </p>
                             <Link to='/'>Ki jan pou w pwoteje w</Link>
